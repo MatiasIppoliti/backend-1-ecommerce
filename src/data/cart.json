@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "products": [
+      {
+        "id": 1,
+        "name": "Zapatos Deportivos",
+        "description": "Zapatos deportivos de alta calidad",
+        "price": 70000,
+        "stock": 35
+      },
+      {
+        "id": 2,
+        "name": "Gorra de Béisbol",
+        "description": "Gorra de béisbol ajustable",
+        "price": 15000,
+        "stock": 50
+      },
+      {
+        "id": 3,
+        "name": "Bufanda de Lana",
+        "description": "Bufanda de lana tejida a mano",
+        "price": 20000,
+        "stock": 40
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "products": [
+      {
+        "id": 1,
+        "name": "Chaqueta Impermeable",
+        "description": "Chaqueta impermeable con capucha",
+        "price": 100000,
+        "stock": 25
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "products": [
+      {
+        "id": 1,
+        "name": "Pantalones de Yoga",
+        "description": "Pantalones de yoga elásticos",
+        "price": 30000,
+        "stock": 45
+      },
+      {
+        "id": 2,
+        "name": "Camiseta de Entrenamiento",
+        "description": "Camiseta de entrenamiento ligera",
+        "price": 25000,
+        "stock": 60
+      },
+      {
+        "id": 3,
+        "name": "Sombrero de Paja",
+        "description": "Sombrero de paja para el verano",
+        "price": 18000,
+        "stock": 30
+      },
+      {
+        "id": 4,
+        "name": "Chaleco Reflectante",
+        "description": "Chaleco reflectante para seguridad",
+        "price": 22000,
+        "stock": 15
+      },
+      {
+        "id": 5,
+        "quantity": 3
+      }
+    ]
+  }
+]
