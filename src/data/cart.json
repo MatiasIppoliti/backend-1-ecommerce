@@ -7,7 +7,8 @@
         "name": "Zapatos Deportivos",
         "description": "Zapatos deportivos de alta calidad",
         "price": 70000,
-        "stock": 35
+        "stock": 35,
+        "quantity": 3
       },
       {
         "id": 2,
@@ -21,7 +22,12 @@
         "name": "Bufanda de Lana",
         "description": "Bufanda de lana tejida a mano",
         "price": 20000,
-        "stock": 40
+        "stock": 40,
+        "quantity": 2
+      },
+      {
+        "id": 4,
+        "quantity": 1
       }
     ]
   },
@@ -71,6 +77,18 @@
       {
         "id": 5,
         "quantity": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "products": [
+      {
+        "id": 1,
+        "name": "Chaqueta Ecocuero",
+        "description": "Chaqueta impermeable con capucha",
+        "price": 100000,
+        "stock": 25
       }
     ]
   }

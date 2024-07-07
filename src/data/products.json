@@ -4,11 +4,14 @@
     "title": "Zapatos Deportivos",
     "description": "Zapatos deportivos de alta calidad",
     "code": "Z001",
-    "status": true,
+    "status": false,
     "price": 70000,
     "stock": 35,
     "category": "Calzado",
-    "thumbnails": ["zapatos_deportivos1.jpg", "zapatos_deportivos2.jpg"]
+    "thumbnails": [
+      "zapatos_deportivos1.jpg",
+      "zapatos_deportivos2.jpg"
+    ]
   },
   {
     "id": "67890",
@@ -19,7 +22,10 @@
     "price": 15000,
     "stock": 50,
     "category": "Accesorios",
-    "thumbnails": ["gorra1.jpg", "gorra2.jpg"]
+    "thumbnails": [
+      "gorra1.jpg",
+      "gorra2.jpg"
+    ]
   },
   {
     "id": "54321",
@@ -30,7 +36,10 @@
     "price": 20000,
     "stock": 40,
     "category": "Accesorios",
-    "thumbnails": ["bufanda1.jpg", "bufanda2.jpg"]
+    "thumbnails": [
+      "bufanda1.jpg",
+      "bufanda2.jpg"
+    ]
   },
   {
     "id": "98765",
@@ -41,7 +50,10 @@
     "price": 100000,
     "stock": 25,
     "category": "Ropa",
-    "thumbnails": ["chaqueta1.jpg", "chaqueta2.jpg"]
+    "thumbnails": [
+      "chaqueta1.jpg",
+      "chaqueta2.jpg"
+    ]
   },
   {
     "id": "19283",
@@ -52,7 +64,10 @@
     "price": 30000,
     "stock": 45,
     "category": "Ropa",
-    "thumbnails": ["pantalones_yoga1.jpg", "pantalones_yoga2.jpg"]
+    "thumbnails": [
+      "pantalones_yoga1.jpg",
+      "pantalones_yoga2.jpg"
+    ]
   },
   {
     "id": "37465",
@@ -63,7 +78,10 @@
     "price": 25000,
     "stock": 60,
     "category": "Ropa",
-    "thumbnails": ["camiseta_entrenamiento1.jpg", "camiseta_entrenamiento2.jpg"]
+    "thumbnails": [
+      "camiseta_entrenamiento1.jpg",
+      "camiseta_entrenamiento2.jpg"
+    ]
   },
   {
     "id": "84736",
@@ -74,7 +92,10 @@
     "price": 18000,
     "stock": 30,
     "category": "Accesorios",
-    "thumbnails": ["sombrero_paja1.jpg", "sombrero_paja2.jpg"]
+    "thumbnails": [
+      "sombrero_paja1.jpg",
+      "sombrero_paja2.jpg"
+    ]
   },
   {
     "id": "29573",
@@ -85,7 +106,10 @@
     "price": 22000,
     "stock": 15,
     "category": "Ropa",
-    "thumbnails": ["chaleco_reflectante1.jpg", "chaleco_reflectante2.jpg"]
+    "thumbnails": [
+      "chaleco_reflectante1.jpg",
+      "chaleco_reflectante2.jpg"
+    ]
   },
   {
     "id": "48572",
@@ -96,7 +120,10 @@
     "price": 12000,
     "stock": 70,
     "category": "Accesorios",
-    "thumbnails": ["guantes_invierno1.jpg", "guantes_invierno2.jpg"]
+    "thumbnails": [
+      "guantes_invierno1.jpg",
+      "guantes_invierno2.jpg"
+    ]
   },
   {
     "id": "67584",
@@ -107,7 +134,10 @@
     "price": 45000,
     "stock": 20,
     "category": "Ropa",
-    "thumbnails": ["sudadera1.jpg", "sudadera2.jpg"]
+    "thumbnails": [
+      "sudadera1.jpg",
+      "sudadera2.jpg"
+    ]
   },
   {
     "id": "75931",
@@ -118,6 +148,23 @@
     "price": 60000,
     "stock": 15,
     "category": "Accesorios",
-    "thumbnails": ["mochila1.jpg", "mochila2.jpg"]
+    "thumbnails": [
+      "mochila1.jpg",
+      "mochila2.jpg"
+    ]
+  },
+  {
+    "id": "99999",
+    "title": "Goma Eva",
+    "description": "Zapatos deportivos de alta calidad",
+    "code": "Z001",
+    "status": true,
+    "price": 70000,
+    "stock": 35,
+    "category": "Calzado",
+    "thumbnails": [
+      "zapatos_deportivos1.jpg",
+      "zapatos_deportivos2.jpg"
+    ]
   }
 ]
