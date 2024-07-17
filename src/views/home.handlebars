@@ -1,32 +1,58 @@
 <body>
     <main>
         <section class="products">
-            <h1 class="title">LISTADO DE PRODUCTOS</span></h1>
-            <h1 class="title"> <span id="product-count">{{productos.length}} PRODUCTOS ENCONTRADOS</span></h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>PRODUCTO</th>
-                        <th>CÓDIGO</th>
-                        <th>CATEGORÍA</th>
-                        <th>PRECIO</th>
-                    </tr>
-                </thead>
-            </table>
-            {{#each productos}}
-            <table>
-                <tbody>
-                    <tr>
-                        <td>{{this.id}}</td>
-                        <td>{{this.title}}</td>
-                        <td>{{this.code}}</td>
-                        <td>{{this.category}}</td>
-                        <td>${{this.price}}</td>
-                    </tr>
-                </tbody>
-            </table>
-            {{/each}}
+            <h1 class="main-title">BIENVENIDO A ELSIE HOME</h1>
         </section>
+        <div class="button-container">
+            <a href="products" class="btn btn-primary">Productos</a>
+            <a href="realtimeproducts" class="btn btn-secondary">Administrar Productos</a>
+            <a href="/carts/669711cad84eda05255658d3" class="btn btn-tertiary">Carrito</a>
+        </div>
+        <br>
     </main>
 </body>
+
+<style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 34px;
+        font-weight: bold;
+        border: 3px solid white;
+        cursor: pointer;
+        border-radius: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn-primary {
+        background: -webkit-linear-gradient(90deg, #7bb62e, #44bb87);
+        background: linear-gradient(90deg, #7bb62e, #44bb87);
+        color: white;
+    }
+
+    .btn-secondary {
+        background: #44bb87;
+        color: white;
+    }
+
+    .btn-tertiary {
+        background: -webkit-linear-gradient(90deg, #44bb87, #0cc0df);
+        background: linear-gradient(90deg, #44bb87, #0cc0df);
+        color: white;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-tertiary:hover {
+        opacity: 0.8;
+        color: black;
+        border: 3px solid black;
+    }
+</style>

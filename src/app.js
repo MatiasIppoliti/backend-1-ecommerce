@@ -5,9 +5,10 @@ import { Server } from 'socket.io';
 import productsRouter from './routes/products.routes.js';
 import cartsRouter from './routes/carts.routes.js';
 import viewsRouter from './routes/view.routes.js';
+import "./../database.js"
 
 const app = express();
-const PORT = 8080;
+const port = 8080;
 
 // Middleware //
 app.use(express.json());
@@ -25,29 +26,42 @@ app.use('/', cartsRouter);
 app.use('/', viewsRouter);
 
 // Servidor //
-const httpServer = app.listen(PORT, () => {
+const httpServer = app.listen(port, () => {
   displayRoutes(app)
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  console.log(`Servidor escuchando en http://localhost:${port}`);
 });
 
-import ProductManager from './utils/productManager.js';
-const productManager = new ProductManager('./src/data/products.json');
+import ProductManager from './dao/db/productManagerDb.js';
+const productManager = new ProductManager('./dao/fs/data/products.json');
+import CartManager from './dao/db/cartManagerDb.js';
+const cartManager = new CartManager('./dao/fs/data/cart.json');
 const io = new Server(httpServer); 
 
-io.on("connection", async (socket) => {
-  console.log("Usuario conectado"); 
+io.on('connection', (socket) => {
+  console.log('Cliente Conectado');
 
-  socket.emit("products", await productManager.getProducts());
+  const sendProducts = async () => {
+      const productsData = await productManager.getProducts();
+      io.emit('products', productsData.docs);
+  };
 
-  socket.on("removeProduct", async (id) => {
+  sendProducts();
+
+  socket.on('addProduct', async (producto) => {
+    try {
+        await productManager.addProduct(producto);
+        sendProducts();
+    } catch (error) {
+        console.error('Error al agregar producto:', error);
+    }
+});
+
+  socket.on('removeProduct', async (id) => {
       await productManager.deleteProduct(id);
+      sendProducts();
+  });
 
-      io.sockets.emit("products", await productManager.getProducts());
-  })
-
-  socket.on("addProduct", async (producto) => {
-      await productManager.addProduct(producto);  
-
-      io.sockets.emit("products", await productManager.getProducts());
-  })
-})
+  socket.on('disconnect', () => {
+      console.log('Cliente Desconectado');
+  });
+});

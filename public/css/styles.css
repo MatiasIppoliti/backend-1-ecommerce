@@ -51,6 +51,7 @@ header {
 
 .logo-container {
     margin: 20px 0;
+    height: 300px;
 }
 
 .logo-container .logo {
@@ -101,6 +102,7 @@ footer {
     padding: 10px 0;
     width: 100%;
     bottom: 0;
+    position: fixed;
 }
 
 .products .title {
@@ -108,7 +110,20 @@ footer {
     padding-bottom: 20px;
 }
 
+.products .main-title {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold
+}
+
 #containerProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#containerProductsCart {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -131,6 +146,17 @@ footer {
     color: #242424;
     font-weight: bold;
     padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.product-card .product--id {
+    font-size: 16px;
+    color: #242424;
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .product-card .product-title {
@@ -139,6 +165,14 @@ footer {
     text-align: center;
     padding: 5px;
 }
+
+.product-card .product--title {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}
+
 
 .product-card .product-description {
     font-size: 0.9em;
@@ -153,8 +187,22 @@ footer {
     padding: 5px;
 }
 
+.product-card .product--stock {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+}
+
 .product-card .product-price {
     font-size: 2.2em;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.product-card .product--price {
+    font-size: 1.5em;
     text-align: center;
     padding: 5px;
     font-weight: bold;
@@ -172,7 +220,7 @@ footer {
     justify-content: center;
     text-decoration: none;
     margin: auto;
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -254,7 +302,7 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     table-layout: fixed;
 }
 
@@ -273,10 +321,98 @@ td {
 }
 
 #product-count {
-    background-color: #007bff; 
-    color: #fff; 
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    margin-left: 10px; 
-    font-weight: bold; 
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: rgb(123, 182, 46);
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid rgb(123, 182, 46);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.pagination-link:hover {
+    background-color: rgb(123, 182, 46);
+    color: #ffffff;
+}
+
+.pagination-text {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333333;
+}
+
+.btn-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-prima {
+    background-color: #7bb62e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-secon {
+    background-color: #0cc0df;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-prima:hover,
+.btn-secon:hover {
+    background-color: #44bb87;
 }
